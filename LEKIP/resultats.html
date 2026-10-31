@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Résultats — L'EKIP</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="masthead">
+  <div class="topline">
+    <span>LE QUOTIDIEN DU SPORT</span>
+    <span>TOUS LES SPORTS, TOUS LES JOURS</span>
+  </div>
+
+  <a class="brand" href="index.html">
+    <img src="images/logo-lekip.png" alt="Logo L'EKIP">
+  </a>
+
+  <div class="edition">
+    <span>Archives des compétitions</span>
+    <span>ÉDITION NUMÉRIQUE</span>
+  </div>
+</header>
+
+<nav class="navigation">
+  <a href="index.html">À LA UNE</a>
+  <a class="active" href="resultats.html">RÉSULTATS</a>
+</nav>
+
+<main class="page">
+
+  <!-- NAVIGATION DES SAISONS -->
+  <div class="season-selector">
+    <button class="season-btn active" onclick="showSeason(1)">SAISON 1</button>
+    <button class="season-btn" onclick="showSeason(2)">SAISON 2</button>
+    <button class="season-btn" onclick="showSeason(3)">SAISON 3</button>
+  </div>
+
+  <section class="intro">
+    <p class="eyebrow">ARCHIVES OFFICIELLES</p>
+    <h1>Résultats & classements</h1>
+    <p>Retrouvez tous les résultats et classements des saisons de la ligue.</p>
+  </section>
+
+
+  <!-- ================= SAISON 1 ================= -->
+
+  <div class="season-content active" id="season-1">
+
+    <div class="season-title">
+      <span>SAISON 1</span>
+      <p>2025 — 2026</p>
+    </div>
+
+    <div class="division-links">
+      <a href="#ligue1">LIGUE 1</a>
+      <a href="#ligue2">LIGUE 2</a>
+    </div>
+
+    <!-- LIGUE 1 -->
+
+    <section id="ligue1" class="results-block">
+
+      <h2>DIVISION 1 — LIGUE 1</h2>
+
+      <h3>CLASSEMENT FINAL</h3>
+
+      <div class="table-wrap">
+        <table class="ranking-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Équipe</th>
+              <th>G</th>
+              <th>N</th>
+              <th>P</th>
+              <th>Diff.</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr><td>1</td><td>Racing Club Sionisme</td><td>4</td><td>1</td><td>1</td><td>+10</td><td>13</td></tr>
+            <tr><td>2</td><td>SC La Reux</td><td>3</td><td>2</td><td>1</td><td>+4</td><td>11</td></tr>
+            <tr><td>3</td><td>Réfugiés FC</td><td>2</td><td>0</td><td>4</td><td>-9</td><td>6</td></tr>
+            <tr><td>4</td><td>P-Diddy Football Club</td><td>1</td><td>1</td><td>4</td><td>-5</td><td>4</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>RÉSULTATS DES JOURNÉES</h3>
+
+      <div class="matchday">
+        <h4>JOURNÉE 1 — 29 AOÛT 2025</h4>
+        <p>Racing Club Sionisme <strong>6 - 0</strong> Réfugiés FC</p>
+        <p>P-Diddy Football Club <strong>1 - 2</strong> SC La Reux</p>
+      </div>
+
+      <div class="matchday">
+        <h4>JOURNÉE 2 — 12 SEPTEMBRE 2025</h4>
+        <p>SC La Reux <strong>0 - 1</strong> Racing Club Sionisme</p>
+        <p>Réfugiés FC <strong>3 - 2</strong> P-Diddy Football Club</p>
+      </div>
+
+      <div class="matchday">
+        <h4>JOURNÉE 3 — 19 SEPTEMBRE 2025</h4>
+        <p>SC La Reux <strong>2 - 1</strong> Réfugiés FC</p>
+        <p>P-Diddy Football Club <strong>4 - 2</strong> Racing Club Sionisme</p>
+      </div>
+
+      <div class="matchday">
+        <h4>JOURNÉE 4 — 26 SEPTEMBRE 2025</h4>
+        <p>Réfugiés FC <strong>1 - 2</strong> Racing Club Sionisme</p>
+        <p>SC La Reux <strong>0 - 0</strong> P-Diddy Football Club</p>
+      </div>
+
+      <div class="matchday">
+        <h4>JOURNÉE 5 — 3 OCTOBRE 2025</h4>
+        <p>Racing Club Sionisme <strong>2 - 2</strong> SC La Reux</p>
+        <p>P-Diddy Football Club <strong>1 - 2</strong> Réfugiés FC</p>
+      </div>
+
+      <div class="matchday">
+        <h4>JOURNÉE 6 — 17 OCTOBRE 2025</h4>
+        <p>Réfugiés FC <strong>3 - 6</strong> SC La Reux</p>
+        <p>Racing Club Sionisme <strong>5 - 1</strong> P-Diddy Football Club</p>
+      </div>
+
+    </section>
+
+
+    <!-- LIGUE 2 -->
+
+    <section id="ligue2" class="results-block">
+
+      <h2>DIVISION 2 — LIGUE 2</h2>
+
+      <h3>CLASSEMENT FINAL</h3>
+
+      <div class="table-wrap">
+        <table class="ranking-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Équipe</th>
+              <th>G</th>
+              <th>N</th>
+              <th>P</th>
+              <th>Diff.</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr><td>1</td><td>Rayzou United FC</td><td>4</td><td>1</td><td>1</td><td>+7</td><td>13</td></tr>
+            <tr><td>2</td><td>MaxouFootballGPT</td><td>3</td><td>1</td><td>2</td><td>+10</td><td>10</td></tr>
+            <tr><td>3</td><td>Sanspapier's Team</td><td>2</td><td>1</td><td>3</td><td>-8</td><td>7</td></tr>
+            <tr><td>4</td><td>FC Scofield</td><td>1</td><td>1</td><td>4</td><td>-9</td><td>4</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>RÉSULTATS DES JOURNÉES</h3>
+
+      <div class="matchday">
+        <h4>JOURNÉE 1 — 29 AOÛT 2025</h4>
+        <p>Rayzou United FC <strong>6 - 3</strong> FC Scofield</p>
+        <p>Sanspapier's Team <strong>3 - 2</strong> MaxouFootballGPT</p>
+      </div>
+
+      <div class="matchday">
+        <h4>JOURNÉE 2 — 12 SEPTEMBRE 2025</h4>
+        <p>FC Scofield <strong>0 - 4</strong> Sanspapier's Team</p>
+        <p>MaxouFootballGPT <strong>2 - 0</strong> Rayzou United FC</p>
+      </div>
+
+      <div class="matchday">
+        <h4>JOURNÉE 3 — 19 SEPTEMBRE 2025</h4>
+        <p>MaxouFootballGPT <strong>2 - 2</strong> FC Scofield</p>
+        <p>Sanspapier's Team <strong>1 - 4</strong> Rayzou United FC</p>
+      </div>
+
+      <div class="matchday">
+        <h4>JOURNÉE 4 — 26 SEPTEMBRE 2025</h4>
+        <p>FC Scofield <strong>0 - 2</strong> Rayzou United FC</p>
+        <p>MaxouFootballGPT <strong>4 - 0</strong> Sanspapier's Team</p>
+      </div>
+
+      <div class="matchday">
+        <h4>JOURNÉE 5 — 3 OCTOBRE 2025</h4>
+        <p>Sanspapier's Team <strong>0 - 6</strong> FC Scofield</p>
+        <p>Rayzou United FC <strong>3 - 2</strong> MaxouFootballGPT</p>
+      </div>
+
+      <div class="matchday">
+        <h4>JOURNÉE 6 — 17 OCTOBRE 2025</h4>
+        <p>FC Scofield <strong>1 - 7</strong> MaxouFootballGPT</p>
+        <p>Rayzou United FC <strong>2 - 2</strong> Sanspapier's Team</p>
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- ================= SAISON 2 ================= -->
+
+  <div class="season-content" id="season-2">
+
+    <section class="season-title">
+      <span>SAISON 2</span>
+      <p>Résultats et scores officiels</p>
+    </section>
+
+    <!-- PREMIÈRE DIVISION -->
+
+    <section class="results-block" id="saison2">
+
+      <h2>SAISON 2 — PREMIÈRE DIVISION</h2>
+
+      <h3>Journée 1</h3>
+      <div class="matchday">
+        <p>Rayzou United <strong>2 – 0</strong> Réfugiés FC</p>
+        <p>Racing Club Sionisme <strong>3 – 1</strong> SC La Reux</p>
+      </div>
+
+      <h3>Journée 2</h3>
+      <div class="matchday">
+        <p>SC La Reux <strong>2 – 2</strong> Rayzou United</p>
+        <p>Réfugiés FC <strong>2 – 6</strong> Racing Club Sionisme</p>
+      </div>
+
+      <h3>Journée 3</h3>
+      <div class="matchday">
+        <p>Racing Club Sionisme <strong>1 – 1</strong> Rayzou United</p>
+        <p>SC La Reux <strong>6 – 2</strong> Réfugiés FC</p>
+      </div>
+
+      <h3>Journée 4</h3>
+      <div class="matchday">
+        <p>Réfugiés FC <strong>5 – 3</strong> Rayzou United</p>
+        <p>SC La Reux <strong>0 – 0</strong> Racing Club Sionisme</p>
+      </div>
+
+      <h3>Journée 5</h3>
+      <div class="matchday">
+        <p>Rayzou United <strong>0 – 0</strong> SC La Reux</p>
+        <p>Racing Club Sionisme <strong>2 – 2</strong> Réfugiés FC</p>
+      </div>
+
+      <h3>Journée 6</h3>
+      <div class="matchday">
+        <p>Rayzou United <strong>0 – 4</strong> Racing Club Sionisme</p>
+        <p>Réfugiés FC <strong>2 – 7</strong> SC La Reux</p>
+      </div>
+
+    </section>
+
+
+    <!-- DEUXIÈME DIVISION -->
+
+    <section class="results-block">
+
+      <h2>SAISON 2 — DEUXIÈME DIVISION</h2>
+
+      <h3>Journée 1</h3>
+      <div class="matchday">
+        <p>Maxou Football GPT <strong>0 – 0</strong> FC Indou</p>
+        <p>FC Scofield <strong>2 – 3</strong> P-Diddy FC</p>
+      </div>
+
+      <h3>Journée 2</h3>
+      <div class="matchday">
+        <p>P-Diddy FC <strong>2 – 1</strong> Maxou Football GPT</p>
+        <p>FC Indou <strong>1 – 5</strong> FC Scofield</p>
+      </div>
+
+      <h3>Journée 3</h3>
+      <div class="matchday">
+        <p>P-Diddy FC <strong>3 – 1</strong> FC Indou</p>
+        <p>FC Scofield <strong>2 – 2</strong> Maxou Football GPT</p>
+      </div>
+
+      <h3>Journée 4</h3>
+      <div class="matchday">
+        <p>FC Indou <strong>0 – 2</strong> Maxou Football GPT</p>
+        <p>P-Diddy FC <strong>5 – 1</strong> FC Scofield</p>
+      </div>
+
+      <h3>Journée 5</h3>
+      <div class="matchday">
+        <p>Maxou Football GPT <strong>0 – 1</strong> P-Diddy FC</p>
+        <p>FC Scofield <strong>4 – 3</strong> FC Indou</p>
+      </div>
+
+      <h3>Journée 6</h3>
+      <div class="matchday">
+        <p>FC Indou <strong>0 – 3</strong> P-Diddy FC</p>
+        <p>Maxou Football GPT <strong>4 – 2</strong> FC Scofield</p>
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- ================= SAISON 3 ================= -->
+
+  <div class="season-content" id="season-3">
+
+    <section class="season-title">
+      <span>SAISON 3</span>
+      <p>Résultats et scores officiels</p>
+    </section>
+
+    <!-- PREMIÈRE DIVISION -->
+
+    <section class="results-block">
+
+      <h2>SAISON 3 — PREMIÈRE DIVISION</h2>
+
+      <h3>Journée 1</h3>
+      <div class="matchday">
+        <p>P-Diddy FC <strong>5 – 2</strong> Rayzou United</p>
+        <p>Racing Club Sionisme <strong>2 – 3</strong> SC La Reux</p>
+      </div>
+
+      <h3>Journée 2</h3>
+      <div class="matchday">
+        <p>Rayzou United <strong>4 – 0</strong> Racing Club Sionisme</p>
+        <p>SC La Reux <strong>1 – 3</strong> P-Diddy FC</p>
+      </div>
+
+      <h3>Journée 3</h3>
+      <div class="matchday">
+        <p>Rayzou United <strong>0 – 4</strong> SC La Reux</p>
+        <p>P-Diddy FC <strong>1 – 1</strong> Racing Club Sionisme</p>
+      </div>
+
+      <h3>Journée 4</h3>
+      <div class="matchday">
+        <p>Réfugiés FC <strong>5 – 3</strong> Rayzou United</p>
+        <p>SC La Reux <strong>4 – 3</strong> Racing Club Sionisme</p>
+      </div>
+
+      <h3>Journée 5</h3>
+      <div class="matchday">
+        <p>Racing Club Sionisme <strong>3 – 0</strong> Rayzou United</p>
+        <p>P-Diddy FC <strong>0 – 4</strong> Réfugiés FC</p>
+      </div>
+
+      <h3>Journée 6</h3>
+      <div class="matchday">
+        <p>SC La Reux <strong>2 – 4</strong> Rayzou United</p>
+        <p>Racing Club Sionisme <strong>1 – 2</strong> P-Diddy FC</p>
+      </div>
+
+    </section>
+
+
+    <!-- DEUXIÈME DIVISION -->
+
+    <section class="results-block">
+
+      <h2>SAISON 3 — DEUXIÈME DIVISION</h2>
+
+      <h3>Journée 1</h3>
+      <div class="matchday">
+        <p>Ruby Nikara FC <strong>1 – 2</strong> FC Scofield</p>
+        <p>Réfugiés FC <strong>2 – 3</strong> Maxou Football GPT</p>
+      </div>
+
+      <h3>Journée 2</h3>
+      <div class="matchday">
+        <p>Maxou Football GPT <strong>0 – 2</strong> Ruby Nikara FC</p>
+        <p>FC Scofield <strong>0 – 3</strong> Réfugiés FC</p>
+      </div>
+
+      <h3>Journée 3</h3>
+      <div class="matchday">
+        <p>Maxou Football GPT <strong>1 – 2</strong> FC Scofield</p>
+        <p>Réfugiés FC <strong>1 – 2</strong> Ruby Nikara FC</p>
+      </div>
+
+      <h3>Journée 4</h3>
+      <div class="matchday">
+        <p>FC Scofield <strong>4 – 2</strong> Ruby Nikara FC</p>
+        <p>Maxou Football GPT <strong>3 – 2</strong> Réfugiés FC</p>
+      </div>
+
+      <h3>Journée 5</h3>
+      <div class="matchday">
+        <p>Ruby Nikara FC <strong>1 – 0</strong> Maxou Football GPT</p>
+        <p>Réfugiés FC <strong>3 – 6</strong> FC Scofield</p>
+      </div>
+
+      <h3>Journée 6</h3>
+      <div class="matchday">
+        <p>FC Scofield <strong>1 – 2</strong> Maxou Football GPT</p>
+        <p>Ruby Nikara FC <strong>1 – 4</strong> Réfugiés FC</p>
+      </div>
+
+    </section>
+
+  </div>
+
+</main>
+
+<footer>
+  <strong>L'EKIP</strong>
+  <span>LE SPORT, NOTRE PASSION</span>
+  <small>© 2026 L'EKIP — Journal sportif indépendant</small>
+</footer>
+
+</body>
+</html>
