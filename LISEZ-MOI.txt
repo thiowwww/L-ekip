@@ -1,0 +1,11 @@
+L'EKIP — site de journal sportif
+
+1. Décompressez le dossier LEKIP sur votre ordinateur.
+2. Ouvrez le dossier LEKIP.
+3. Double-cliquez sur index.html pour afficher le site dans votre navigateur.
+4. Pour modifier le site, ouvrez le dossier dans Visual Studio Code.
+
+Fichiers : index.html (accueil), style.css (design), script.js (interactions).
+Les images sont dans le dossier images. Ne déplacez pas les images hors de ce dossier.
+Le site fonctionne localement et ne nécessite pas de paiement.
+Les pages d'articles affichent les unes fournies ; les textes complets pourront être ajoutés ensuite.

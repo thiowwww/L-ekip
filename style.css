@@ -1,0 +1,686 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --red: #e3131b;
+  --ink: #111;
+  --paper: #f5f4f1;
+  --line: #c9c7c2;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Inter, Arial, sans-serif;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.masthead {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 12px 28px 0;
+}
+
+.topline, .edition {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .07em;
+}
+
+.topline {
+  border-bottom: 1px solid var(--ink);
+  padding: 4px 0 9px;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 3px solid var(--ink);
+}
+
+.brand img {
+  display: block;
+  width: min(100%, 570px);
+  height: 190px;
+  object-fit: contain;
+}
+
+.edition {
+  padding: 9px 0 12px;
+  border-bottom: 1px solid var(--line);
+  color: #444;
+}
+
+.navigation {
+  background: var(--ink);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.navigation a {
+  color: white;
+  padding: 15px 22px;
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background: var(--red);
+}
+
+.page {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 34px 24px 60px;
+}
+
+.intro {
+  border-bottom: 4px solid var(--ink);
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+.eyebrow, .category {
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+
+.intro h1 {
+  margin: 7px 0 4px;
+  font: 900 clamp(38px, 6vw, 68px)/.98 "Barlow Condensed", Impact, sans-serif;
+  text-transform: uppercase;
+}
+
+.intro > p:last-child {
+  color: #555;
+  margin-bottom: 0;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid var(--ink);
+  margin-bottom: 20px;
+}
+
+.section-heading h2 {
+  font: 800 27px "Barlow Condensed", Impact, sans-serif;
+  margin: 0 0 10px;
+}
+
+.section-heading span {
+  color: #666;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.article-card {
+  background: white;
+  border: 1px solid var(--line);
+}
+
+/* Aperçus des articles sur la page d'accueil */
+.article-image {
+  display: block;
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.article-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+  transition: transform .25s ease;
+}
+
+.article-image:hover img {
+  transform: scale(1.04);
+}
+
+.image-label {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  background: var(--red);
+  color: white;
+  padding: 9px 12px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .06em;
+}
+
+.article-copy {
+  padding: 19px 20px 22px;
+}
+
+.article-copy .category {
+  margin: 0 0 8px;
+}
+
+.article-copy h3 {
+  font: 800 31px/1 "Barlow Condensed", Impact, sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.article-copy h3 a:hover {
+  color: var(--red);
+}
+
+.article-copy > p:not(.category) {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+footer {
+  background: var(--ink);
+  color: white;
+  padding: 28px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer strong {
+  color: var(--red);
+  font: 900 30px "Barlow Condensed", Impact, sans-serif;
+}
+
+footer span,
+footer small {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+/* Pages des articles complets */
+.article-page {
+  max-width: 1000px;
+  margin: 30px auto 60px;
+  padding: 0 20px;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--red);
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.article-page img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ddd;
+}
+
+.article-page h1 {
+  font: 900 clamp(34px, 6vw, 64px)/.98 "Barlow Condensed", Impact, sans-serif;
+  text-transform: uppercase;
+}
+
+.article-page .category {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 700px) {
+  .masthead {
+    padding: 8px 14px 0;
+  }
+
+  .brand img {
+    height: 125px;
+  }
+
+  .topline,
+  .edition {
+    font-size: 8px;
+  }
+
+  .navigation a {
+    padding: 12px 13px;
+    font-size: 14px;
+  }
+
+  .page {
+    padding: 25px 14px 40px;
+  }
+
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-image {
+    height: 220px;
+  }
+
+  .section-heading span {
+    display: none;
+  }
+}
+
+/* Réseaux sociaux de la ligue */
+
+.social-section {
+  margin-top: 55px;
+  padding-top: 10px;
+}
+
+.social-platform {
+  margin-bottom: 35px;
+}
+
+.social-platform h3 {
+  font: 800 23px "Barlow Condensed", Impact, sans-serif;
+  border-left: 5px solid var(--red);
+  padding-left: 12px;
+  margin-bottom: 16px;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.social-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-bottom: 3px solid var(--red);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.social-card:hover {
+  transform: translateY(-4px);
+  background: #f0eeeb;
+}
+
+.social-card strong {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.social-card span {
+  color: var(--red);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+@media (max-width: 700px) {
+  .social-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* PAGE DES RÉSULTATS */
+
+.season-title {
+  background: var(--ink);
+  color: white;
+  padding: 22px;
+  border-left: 6px solid var(--red);
+  margin-bottom: 20px;
+}
+
+.season-title span {
+  font: 900 34px "Barlow Condensed", Impact, sans-serif;
+}
+
+.season-title p {
+  margin: 4px 0 0;
+  color: #bbb;
+  font-size: 12px;
+}
+
+.division-links {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.division-links a {
+  background: var(--red);
+  color: white;
+  padding: 12px 22px;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.results-block {
+  margin: 45px 0;
+  scroll-margin-top: 20px;
+}
+
+.results-block h2 {
+  background: var(--ink);
+  color: white;
+  padding: 15px;
+  border-left: 6px solid var(--red);
+  font: 900 30px "Barlow Condensed", Impact, sans-serif;
+}
+
+.results-block h3 {
+  font: 800 22px "Barlow Condensed", Impact, sans-serif;
+  margin-top: 28px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 13px;
+}
+
+.ranking-table th {
+  background: #222;
+  color: white;
+  padding: 13px 10px;
+  text-align: center;
+}
+
+.ranking-table td {
+  padding: 14px 10px;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.ranking-table td:nth-child(2) {
+  text-align: left;
+  font-weight: 700;
+}
+
+.ranking-table tbody tr:first-child {
+  border-left: 4px solid #159447;
+}
+
+.matchday {
+  background: white;
+  border: 1px solid var(--line);
+  margin: 14px 0;
+  padding: 16px 20px;
+}
+
+.matchday h4 {
+  margin: 0 0 12px;
+  color: var(--red);
+  font-size: 12px;
+  letter-spacing: .05em;
+}
+
+.matchday p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 9px 0;
+  font-size: 13px;
+}
+
+.matchday strong {
+  background: var(--ink);
+  color: white;
+  padding: 6px 12px;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .matchday {
+    padding: 12px;
+  }
+
+  .matchday p {
+    font-size: 11px;
+  }
+
+  .ranking-table {
+    font-size: 11px;
+  }
+
+  .ranking-table th,
+  .ranking-table td {
+    padding: 10px 6px;
+  }
+}
+
+/* SÉLECTEUR DE SAISONS */
+
+.season-selector {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.season-btn {
+  flex: 1;
+  min-width: 100px;
+  padding: 14px 20px;
+  background: #222;
+  color: white;
+  border: none;
+  border-bottom: 4px solid transparent;
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.season-btn:hover {
+  background: #333;
+}
+
+.season-btn.active {
+  background: #e3131b;
+  border-bottom-color: #111;
+}
+
+.season-content {
+  display: none;
+}
+
+.season-content.active {
+  display: block;
+}
+
+/* ==========================================
+   SCORES EN DIRECT — L'EKIP
+   ========================================== */
+
+.live-section {
+  margin: 35px 0;
+  background: #111;
+  color: white;
+  padding: 20px;
+}
+
+.live-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 2px solid #e3131b;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.live-header h2 {
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.live-indicator {
+  width: 12px;
+  height: 12px;
+  background: #e3131b;
+  border-radius: 50%;
+  animation: liveBlink 1s infinite;
+}
+
+.live-label {
+  margin-left: auto;
+  background: #e3131b;
+  padding: 5px 12px;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.live-match {
+  background: #222;
+  padding: 20px;
+}
+
+.live-match-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 800;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.live-status {
+  color: #e3131b;
+  font-weight: 900;
+}
+
+.live-score {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  gap: 15px;
+}
+
+.live-team h3 {
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: 35px;
+  margin: 0;
+  font-weight: 900;
+}
+
+.live-team p {
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 5px;
+}
+
+.live-result {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: 55px;
+  font-weight: 900;
+  color: white;
+}
+
+.score-separator {
+  color: #e3131b;
+}
+
+.live-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+  padding-top: 15px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.live-footer span:first-child {
+  color: #e3131b;
+}
+
+@keyframes liveBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+}
+
+/* VERSION MOBILE */
+
+@media (max-width: 600px) {
+
+  .live-section {
+    padding: 12px;
+  }
+
+  .live-header h2 {
+    font-size: 22px;
+  }
+
+  .live-score {
+    gap: 8px;
+  }
+
+  .live-team h3 {
+    font-size: 27px;
+  }
+
+  .live-result {
+    font-size: 40px;
+    gap: 8px;
+  }
+
+  .live-team p {
+    font-size: 10px;
+  }
+
+}
